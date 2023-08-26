@@ -23,3 +23,8 @@ Particle collider dataset:
 [Kayla M. Araiza](kmaraiza@ucdavis.edu)
 [Mujun Zhang](mjuzhang@ucdavis.edu)
 [Kahee Chan](kahchan@ucdavis.edu)
+
+
+Code:
+# link to google colab code 
+https://colab.research.google.com/drive/1ZcecHvvYBBgO4CEE2mIW6B_TaWX5CkqI?usp=sharing
