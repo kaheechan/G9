@@ -16,11 +16,6 @@ We compiled the relevant columns from both the linear collisions dataset and cir
 The biggest challenge we came across with this Data Exploration milestone was figuring out how to extract the data from the two .root files we are working with. Initially, the plan was to convert these .root files into .csv files outside of colab by first converting them into a dictionary and then a pandas dataframe and finally saving as a csv, and then import the csv files into colab and work with those. However, for some reason, the csv file convesion process was causing us to loose important data, so we decided to directly work with the .root files in colab. We were able to copy and paste our old code in which converted these root files into a dictionary and then a pandas dataframe. Figuring out how to work with root files in general was another challenge.
 
 
-File description of data:
-`Collider_circular.root`: titled `yieldHistos_7p7GeV_Pion_2022_08_31.root`
-`Collider_linear.root`: titled `Output_File_2023_02_15.root`
-
-
 
 ***Group Memeber emails*** 
 [Darian Lee](deee@ucdavis.edu)
