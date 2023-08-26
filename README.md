@@ -9,6 +9,7 @@ We have two datasets, `Collider_circular.root` and `Collider_linear.root`. The p
 Challenges:
 The biggest challenge we came across with the Data Exploration milestone was figuring out how to extract the data from two .root files we are working with. Initially, the plan was to convert these .root files into .csv files. In making this conversion, we discovered that each of the data columns consisted of singular 1000x1000 matrices. Issues arose, however, with our attempts in converting these matrices into a Pandas dataframe (we speculate this was due to some probable data loss that occurred in the file conversion process). As such, instead of converting the .root file into .csv files, we reverted to directly working with the .root files in our code. In doing so, we were then able to successfully convert our data into a Pandas dataframe by accessing and storing the values in the .root files into a Python dictionary, then converting this dictionary into a Pandas dataframe.
 
+
 File description of data:
 `Collider_circular.root`: titled `yieldHistos_7p7GeV_Pion_2022_08_31.root`
 `Collider_linear.root`: titled `Output_File_2023_02_15.root`
