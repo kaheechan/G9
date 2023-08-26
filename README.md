@@ -14,6 +14,8 @@ We compiled the relevant columns from both the linear collisions dataset and cir
 # Data preprocessing 
 Our next step in our data preprocessing is to compress the size of our matrices by removing excess zeros from both ends of the distributions and zoning in on the larger numerical values. We will also indentify the peak values in the gaussian distributions contrast the deviations with the ideal gaussian. 
 
+# Descriptions of graphs 
+Thee y axis on our plots represents VINCENT FILL IN. The x axis represents VINCENT FILL IN. We decided to leave the y axis inverted when graphing in order to make the y axis stand out more from the x axis to help with our analysis. Some interesting trends we noticed on these graphs were VINCENT FILL IN 
 
 # Challenges:
 The biggest challenge we came across with this Data Exploration milestone was figuring out how to extract the data from the two .root files we are working with. Initially, the plan was to convert these .root files into .csv files outside of colab by first converting them into a dictionary and then a pandas dataframe and finally saving as a csv, and then import the csv files into colab and work with those. However, for some reason, the csv file conversion process was causing us to loose important data, so we decided to directly work with the .root files in colab. We were able to copy and paste our old code which converted these root files into a dictionary and then a pandas dataframe. Figuring out how to work with root files without installing root in general was another challenge.
