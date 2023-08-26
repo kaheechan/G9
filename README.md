@@ -2,9 +2,15 @@
 
 # Analysis on the Particle collider dataset
 
-Abstract
+# Abstract
 
 We have two datasets, `Output_File_2023_02_15.root` which includes data about the linear collisions and `yieldHistos_7p7GeV_Pion_2022_08_31.root` which contains data about circular. The project idea is to analyze the datasets on the shape of explosions from a particle collider in order to determine what aspects of the particles used and conditions influence the shape of the collision. These findings would be significant because they can help researchers determine the collider type they should use when looking to collide two particles. We are not fully certain on what machine learning model we will use, but are considering unsupervised learning by applying a neural network to the data to identify correlations and connections between data points. 
+
+
+
+# Description of data
+We compiled the relevant columns from both the linear collisions dataset and circular collisions dataset into a dataframe. Although this dataframe appears to only have 2 rows, contained within those rows 1000x1000 matrices that represent data from over 91 thousand collisions. This way of packaging the data allows pysicists to work with larger quantities of data then would be compatible with a csv file. The original root files had over 200 different features, but the the features that we choose to include in our dataframe and thus to analyse were dEdx_PionPlus_Isolated;1, dEdx_PionMinus_Isolated;1, dEdx_KaonPlus_Isolated;1, dEdx_KaonMinus_Isolated;1, dEdx_ProtonPlus_Isolated;1, dEdx_ProtonMinus_Isolated;1, dEdx_DeuteronPlus_Isolated;1, dEdx_DeuteronMinus_Isolated;1, dEdx_TritonPlus_Isolated;1, dEdx_TritonMinus_Isolated;1, dEdx_HelionPlus_Isolated;1, dEdx_HelionMinus_Isolated;1, dEdx_AlphaPlus_Isolated;1, and dEdx_AlphaMinus_Isolated;1. We decided to use these datapoints 
+
 
 Challenges:
 The biggest challenge we came across with the Data Exploration milestone was figuring out how to extract the data from two .root files we are working with. Initially, the plan was to convert these .root files into .csv files outside of colab, and then import the csv files into colab and work with those. In making this conversion, we discovered that each of the data columns consisted of 1000x1000 matrices. These matrices were representations of data from thousands of different collision, so although our final dataframe appears to contain only 2 datapoints, one for linear collisions and one for circular, there over 91 thousand collisions represented in each of these matrices. We made these matrices into a dictionary and then converted the dictionary into a pandas dataframe and tried to export it as a csv file. However, for some reason, the csv file convesion process was causing us to loose important data, so we decided to directly work with the .root files in colab. We were able to copy and paste our old code which converted these root files into a dictionary and then a pandas dataframe and then we graphed the different columns 
