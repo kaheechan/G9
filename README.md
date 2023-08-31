@@ -17,9 +17,10 @@ While the next step in our preprocessing plan involved making our matrices dense
 data") for the purpose of making our neural net run faster, we instead decided to go with an alternative approach
 From our last milestone, we were able to extract 14 1000x1000 matrices. Through further analysis of the data stored
 in these matrices, we were able to deduce that the following: 
-    1. rows correspond to position
-    1. columns correspond to change in energy over distance (equates to stopping power)
-    1. values correspond to the number of hits 
+1. rows correspond to position
+1. columns correspond to change in energy over distance (equates to stopping power)
+1. values correspond to the number of hits 
+
 As we have now developed a better understanding of what the matrices represent, we believe it is more beneficial
 for us to convert these matrices into tabular data form as it is something we are all more familiar and comfortable
 working with.
