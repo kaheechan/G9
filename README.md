@@ -16,7 +16,7 @@ Our next step in our data preprocessing is to compress the size of our matrices 
 While the next step in our preprocessing plan involved making our matrices dense (i.e. "zooming into meaningful
 data") for the purpose of making our neural net run faster, we instead decided to go with an alternative approach
 From our last milestone, we were able to extract 14 1000x1000 matrices. Through further analysis of the data stored
-in these matrices, we were able to deduce that the following: 
+in these matrices, we were able to deduce the following: 
 1. rows correspond to position
 1. columns correspond to change in energy over distance (equates to stopping power)
 1. values correspond to the number of hits 
