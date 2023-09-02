@@ -58,16 +58,12 @@ The biggest challenge we came across with this Data Exploration milestone was fi
 ### Preprocessing and First Model Building and Evaluation
 
 #Evaluation of Preprocessing and First Model Building
-
-*For the four cross-validation folds (Folds), the MSE of each fold is very close, all around 0.018.
+* For the four cross-validation folds (Folds), the MSE of each fold is very close, all around 0.018.
 The average MSE value is 0.018, which means that the average prediction error of the model is relatively small. MSE measures the difference between the predicted value of the model and the actual value, and a smaller MSE indicates a better predictive performance of the model.
-
-*R2 Score Analysis:
-
+* R2 Score Analysis:
 For the four cross-validation folds, the R2 scores for each fold range from 0.413 to 0.416.
 The average R2 score is 0.414, which is a relatively stable value. The R2 score measures how well the model fits the observed data, and the closer to 1, the better the fit.
-
-*Overall average MSE and R2:
+* Overall average MSE and R2:
 
 The overall mean MSE was 0.018 and the overall mean R2 was 0.414. This shows that the performance of the model on the entire data set is also stable, and the fitting effect on the data is better.
 
