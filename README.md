@@ -50,7 +50,7 @@ In our project, using a 4-layer ANN to process complex data is a reasonable choi
 The average MSE value is 0.018, which means that the average prediction error of the model is relatively small. MSE measures the difference between the predicted value of the model and the actual value, and a smaller MSE indicates a better predictive performance of the model.
 * R2 Score Analysis:
 For the four cross-validation folds, the R2 scores for each fold range from 0.413 to 0.416.
-The average R2 score is 0.414, which is a relatively stable value. The R2 score measures how well the model fits the observed data, and the closer to 1, the better the fit.
+The average R2 score is 0.414, which is lower than expected. We intend to investigate this issue furthure in the final project
 * Overall average MSE and R2:
 The overall mean MSE was 0.018 and the overall mean R2 was 0.414. This shows that the performance of the model on the entire data set is also stable, and the fitting effect on the data is better.
 * Collapse of best MSE and R2 scores:
