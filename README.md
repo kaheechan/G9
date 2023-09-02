@@ -65,6 +65,8 @@ The biggest challenge we came across with this Data Exploration milestone was fi
 The biggest challenge was figuring how to convert 26 1000x1000 matrices into a nice readable dataframe. We had to decide how we wanted to represent this data in our dataframe, and once we decided that we wanted to merge all the particles from different matrices into the same rows based on stopping power and position, it became a big issue to try to make sure that we are extracting the data at the exact same places in the matrices for all features, and that the places we are extracting data would contain the least amount of useless data (all zeros would be considered useless). 
 In retrospect, it would have been easier to do this based on looking at areas across all graphs where nost data seemed to be concentrated. However, the approach we choose involved interating through matrices to find the maximum and minimum row and column where there is meaningful data, using those values to find the global minimum and maximum, evaluating at those points and creating a dataframe for each feature, recursively merging all dataframes into one, and then normalizing and removing noise and all rows of all 0s 
 
+# Fitting of the data
+Our data does not appear to be overfit. For more information about this and to see the required fitting graph, please see our colab file
 
 File description of data:
 `Collider_circular.root`: titled `yieldHistos_7p7GeV_Pion_2022_08_31.root`
