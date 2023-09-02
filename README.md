@@ -64,20 +64,15 @@ The average MSE value is 0.018, which means that the average prediction error of
 For the four cross-validation folds, the R2 scores for each fold range from 0.413 to 0.416.
 The average R2 score is 0.414, which is a relatively stable value. The R2 score measures how well the model fits the observed data, and the closer to 1, the better the fit.
 * Overall average MSE and R2:
-
 The overall mean MSE was 0.018 and the overall mean R2 was 0.414. This shows that the performance of the model on the entire data set is also stable, and the fitting effect on the data is better.
-
-*Collapse of best MSE and R2 scores:
-
+* Collapse of best MSE and R2 scores:
 First-fold cross-validation achieves the best performance in terms of MSE and R2. This means that at this compromise, the model has the smallest prediction error and the best fit to the data.
-
-*Evaluate model performance and improvement directions:
-
+* Evaluate model performance and improvement directions:
 From the perspective of MSE and R2, the model performs well on the dataset, but there is room for further improvement.
 Consider experimenting with different model architectures or hyperparameter settings to improve model performance. For example, tuning hyperparameters such as the number of layers, number of neurons, or learning rate of a neural network.
-*Alternatively, feature engineering can be done to explore whether there are other important features that can improve the performance of the model.
-*Further model evaluation can include more performance metrics and visualizations to gain insight into how the model performs on different classes or data distributions.
-*Finally, different data partitioning strategies can be tried, such as variants of K-Fold cross-validation, to ensure the robustness and generality of the model.
+* Alternatively, feature engineering can be done to explore whether there are other important features that can improve the performance of the model.
+* Further model evaluation can include more performance metrics and visualizations to gain insight into how the model performs on different classes or data distributions.
+* Finally, different data partitioning strategies can be tried, such as variants of K-Fold cross-validation, to ensure the robustness and generality of the model.
 
 
 File description of data:
