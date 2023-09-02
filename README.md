@@ -22,7 +22,7 @@ From our last milestone, we were able to extract 14 1000x1000 matrices such that
 
 As we have now developed a better understanding of what the matrices represent, we believe it is more beneficial
 for us to convert these matrices into tabular data form as it is something we are all more familiar and comfortable
-working with. However, for the final project, we entend to use a convolutional neural network on the matrices 
+working with. However, for the final project, we entend to use a convolutional neural network on the matrices in addition to the model we uilt this week
 
 Before creating this `.csv` file, we first one-hot encoded our `linear` and `circular` features. After doing so, we  then
 actually began the process of creating the dataframe columns (i.e. converting the matrices), which consisted of the positions,
