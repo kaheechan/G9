@@ -61,7 +61,33 @@ Overall, this project appears to be a reasonable modeling of a classification pr
 The biggest challenge we came across with this Data Exploration milestone was figuring out how to extract the data from the two `.root` files we are working with. Initially, the plan was to convert these `.root` files into `.csv` files outside of Colab by first converting them into a dictionary and then a pandas dataframe and finally saving as a `.csv`, and then import the `.csv` files into Colab and work with those. However, for some reason, the `.csv` file conversion process was causing us to loose important data, so we decided to directly work with the `.root` files in Colab. We were able to copy and paste our old code which converted these `.root` files into a dictionary and then a pandas dataframe. Figuring out how to work with `.root` files without installing root in general was another challenge.
 
 ### Preprocessing and First Model Building and Evaluation
-(write here)
+
+#Evaluation of Preprocessing and First Model Building
+
+
+*For the four cross-validation folds (Folds), the MSE of each fold is very close, all around 0.018.
+The average MSE value is 0.018, which means that the average prediction error of the model is relatively small. MSE measures the difference between the predicted value of the model and the actual value, and a smaller MSE indicates a better predictive performance of the model.
+
+*R2 Score Analysis:
+
+For the four cross-validation folds, the R2 scores for each fold range from 0.413 to 0.416.
+The average R2 score is 0.414, which is a relatively stable value. The R2 score measures how well the model fits the observed data, and the closer to 1, the better the fit.
+
+*Overall average MSE and R2:
+
+The overall mean MSE was 0.018 and the overall mean R2 was 0.414. This shows that the performance of the model on the entire data set is also stable, and the fitting effect on the data is better.
+
+*Collapse of best MSE and R2 scores:
+
+First-fold cross-validation achieves the best performance in terms of MSE and R2. This means that at this compromise, the model has the smallest prediction error and the best fit to the data.
+
+*Evaluate model performance and improvement directions:
+
+From the perspective of MSE and R2, the model performs well on the dataset, but there is room for further improvement.
+Consider experimenting with different model architectures or hyperparameter settings to improve model performance. For example, tuning hyperparameters such as the number of layers, number of neurons, or learning rate of a neural network.
+*Alternatively, feature engineering can be done to explore whether there are other important features that can improve the performance of the model.
+*Further model evaluation can include more performance metrics and visualizations to gain insight into how the model performs on different classes or data distributions.
+*Finally, different data partitioning strategies can be tried, such as variants of K-Fold cross-validation, to ensure the robustness and generality of the model.
 
 
 File description of data:
