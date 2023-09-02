@@ -28,11 +28,11 @@ working with.
 Before creating this `.csv` file, we first one-hot encoded our `linear` and `circular` features. After doing so, we  then
 actually began the process of creating the dataframe columns (i.e. converting the matrices), which consisted of the positions,
 stopping power, and all other features as being their own separate columns. This process involved the challenge of shrinking our
-large dataset (115,000) by finding a range of data in each matrix where a large amount of non-zero values would be completed
-removed without removing entire rows from the dataframe (to preserve shape of each matrix turned dataframe to avoid merging conflicts).
+large dataset (115,000 data points) by finding a range of data in each matrix where a large amount of non-zero values would be completed
+removed without removing entire rows from the dataframe (to preserve shape of each matrix turned dataframe and to avoid concatenation conflicts).
 
-After each matrix was converting into a tabular dataform, we then merged each of them into a single tabular dataframe, after
-which we normalized all features before training and testing split.
+After each matrix was converted into a tabular dataform, we then merged each of them into a single tabular dataframe, after
+which we normalized all features before beginning training and testing of our model.
 
 # Descriptions of Graphs 
 Thee y axis on our plots represents stopping power per particle. The x axis represents mass energy of a particle. We decided to leave the y axis inverted when graphing in order to make the y axis stand out more from the x axis to help with our analysis. Some interesting trends we noticed on these graphs were a small variance along the axis for pions and deuteron and proton minus distributions and logarithmic correlations with other distributions.
