@@ -18,14 +18,21 @@ data") for the purpose of making our neural net run faster, we instead decided t
 From our last milestone, we were able to extract 14 1000x1000 matrices. Through further analysis of the data stored
 in these matrices, we were able to deduce the following: 
 1. rows correspond to position
-1. columns correspond to change in energy over distance (equates to stopping power)
-1. values correspond to the number of hits 
+1. columns correspond to change in energy over distance (equates to Stopping power)
+1. values correspond to the number of collisions (more specifically, the number of decayed particles that were detected at that Stopping Power and Position ) 
 
 As we have now developed a better understanding of what the matrices represent, we believe it is more beneficial
 for us to convert these matrices into tabular data form as it is something we are all more familiar and comfortable
-working with.
+working with. 
 
-(work in progress...)
+Before creating this `.csv` file, we first one-hot encoded our `linear` and `circular` features. After doing so, we  then
+actually began the process of creating the dataframe columns (i.e. converting the matrices), which consisted of the positions,
+stopping power, and all other features as being their own separate columns. This process involved the challenge of shrinking our
+large dataset (115,000) by finding a range of data in each matrix where a large amount of non-zero values would be completed
+removed without removing entire rows from the dataframe (to preserve shape of each matrix turned dataframe to avoid merging conflicts).
+
+After each matrix was converting into a tabular dataform, we then merged each of them into a single tabular dataframe, after
+which we normalized all features before training and testing split.
 
 # Descriptions of Graphs 
 Thee y axis on our plots represents stopping power per particle. The x axis represents mass energy of a particle. We decided to leave the y axis inverted when graphing in order to make the y axis stand out more from the x axis to help with our analysis. Some interesting trends we noticed on these graphs were a small variance along the axis for pions and deuteron and proton minus distributions and logarithmic correlations with other distributions.
