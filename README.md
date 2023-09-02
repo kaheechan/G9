@@ -65,15 +65,7 @@ First-fold cross-validation achieves the best performance in terms of MSE and R2
 The biggest challenge we came across with this Data Exploration milestone was figuring out how to extract the data from the two `.root` files we are working with. Initially, the plan was to convert these `.root` files into `.csv` files outside of Colab by first converting them into a dictionary and then a pandas dataframe and finally saving as a `.csv`, and then import the `.csv` files into Colab and work with those. However, for some reason, the `.csv` file conversion process was causing us to loose important data, so we decided to directly work with the `.root` files in Colab. We were able to copy and paste our old code which converted these `.root` files into a dictionary and then a pandas dataframe. Figuring out how to work with `.root` files without installing root in general was another challenge.
 
 ### Preprocessing and First Model Building and Evaluation
-
-#Evaluation of Preprocessing and First Model Building
-
-* Evaluate model performance and improvement directions:
-From the perspective of MSE and R2, the model performs well on the dataset, but there is room for further improvement.
-Consider experimenting with different model architectures or hyperparameter settings to improve model performance. For example, tuning hyperparameters such as the number of layers, number of neurons, or learning rate of a neural network.
-* Alternatively, feature engineering can be done to explore whether there are other important features that can improve the performance of the model.
-* Further model evaluation can include more performance metrics and visualizations to gain insight into how the model performs on different classes or data distributions.
-* Finally, different data partitioning strategies can be tried, such as variants of K-Fold cross-validation, to ensure the robustness and generality of the model.
+(write here)
 
 
 File description of data:
